@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: ghostwhite;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    z-index: -10;
+    padding: 5%;
+    scroll-behavior: smooth;
+    background-color: ghostwhite;
+}
+
+.heading {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.heading img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.input_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.task_input {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.task_status {
+    width: 20%;
+    height: 35px;
+    margin-top: 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: lavender;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.add_btn,
+.edit_btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    box-shadow: 5px 2px 5px 0px black;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    font-weight: 700;
+}
+
+.add_btn:hover,
+.edit_btn:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: ghostwhite;
+}
+
+
+tr:hover {
+    background-color: lightsteelblue;
+    transition: 0.2s ease-in-out;
+}
+
+.action a {
+    padding: 8px 8px;
+    border-radius: 4px;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action a:hover {
+    background-color: lightslategray;
+    transition: 0.5s ease-in-out;
+}
+
+.progress.not_yet_started a {
+    background-color: lightcoral;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 100%;
+}
+
+.progress.on_progress a {
+    background-color: lightgreen;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 100%;
+}
+
+.progress.waiting_on a {
+    background-color: gold;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 100%;
+}
+
+.doneCheck:hover {
+    cursor: pointer;
+}
+
+.checkbox-image {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.checkbox-image input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-image img.uncheckedbox {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.checkbox-image input[type="checkbox"]:checked+img {
+    content: url('img/checkedbox.png');
+}
+
+.checkbox-image input[type="checkbox"]+img {
+    content: url('img/uncheckedbox.png');
+}
+
+.checkbox-image img.uncheckedbox:hover {
+    content: url('img/checkedbox.png');
+    cursor: pointer;
+}
+
+.deletebawah:hover {
+    background-color: #555;
+}
+
+.deletebawah {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #333;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.actions img {
+
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+.container2 {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    overflow: auto;
+}
+
+.task {
+    word-wrap: break-word;
+    max-width: 200px;
+}
+
+.error {
+    text-align: center;
+}
